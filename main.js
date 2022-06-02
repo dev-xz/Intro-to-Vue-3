@@ -11,5 +11,13 @@ const app = Vue.createApp({
               { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' },
             ]
         }
+    },
+    methods: {
+        addToCart: function() {
+            this.cart += 1
+        },
+        updateImage: function(imageUrl) {
+            this.image = imageUrl
+        }
     }
 })
