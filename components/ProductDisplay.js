@@ -65,6 +65,9 @@ app.component('product-display', {
       },
       addReview(review) {
         this.reviews.push(review)
+      },
+      addToCart() {
+        this.$emit('add-to-cart', this.variants[this.selectedVariant].id)
       }
   },
   computed: {
